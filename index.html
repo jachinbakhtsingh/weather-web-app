@@ -1,10 +1,11 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Weather App</title>
+  <!-- Tailwind CDN (for assignment simplicity) -->
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -14,6 +15,7 @@
       <h1 class="text-3xl text-center font-bold text-slate-800">Weather Forecast</h1>
     </header>
 
+    <!-- Controls -->
     <section id="controls" class="bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-md mb-4">
         <p class="text-sm pb-3 text-slate-600">Search by city or use your current location</p>
       <div class="flex flex-wrap gap-3">
@@ -47,9 +49,11 @@
       </div>
     </section>
 
+    <!-- Error / Alert area -->
     <div id="message" class="mb-4"></div>
 
     <main id="main" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Current Weather Card -->
       <section id="current" class="col-span-2 bg-white/90 p-6 rounded-xl shadow">
         <div class="flex items-start gap-4">
           <div>
@@ -80,6 +84,7 @@
         </div>
       </section>
 
+      <!-- Forecast Column -->
       <aside id="forecast-col" class="bg-white/90 p-4 rounded-xl shadow">
         <h3 class="text-lg font-semibold mb-3">5-Day Forecast</h3>
         <div id="forecast-cards" class="space-y-3"></div>
@@ -87,5 +92,6 @@
     </main> 
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
