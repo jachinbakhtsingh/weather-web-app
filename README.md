@@ -13,8 +13,12 @@ Simple weather forecast single-page application built with HTML, Tailwind CSS, a
 - Friendly UI messages and error handling
 
 ## Setup
-1. Sign up at https://openweathermap.org/ and get a free API key.
-2. Clone the repo:
+1. Add Tailwind css https://cdn.tailwindcss.com
+2. Sign up at https://openweathermap.org/ and get a free API key.
+   login with you account
+   navigate to API key
+   Use a defult key or create new
+3. Clone the repo:
    bash
    git clone https://github.com/jachinbakhtsingh/weather-web-app
    cd weather-app
